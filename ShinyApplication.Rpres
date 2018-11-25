@@ -1,0 +1,31 @@
+Final Assignment -ShinyApplication
+========================================================
+author: Sadaf Mehdi
+date: 25 November 2018
+autosize: true
+
+Overview
+========================================================
+
+
+This assignment has 2 objectives
+- To creates a shiny application and deploy it on Rstudio's servers. 
+- Use Rstudio Presenter to prepare a reproducible pitch presentation about your application.
+
+Web Application
+========================================================
+
+This application uses the "mtcars"" dataset to perform regression analysis.
+User can make a selection from the options(Cylinders,Transmission,Gears) displayed in a drop down menu. The selected option will be plotted against Mile per Gallon (mpg) and a plot will be displayed.
+
+Dataset Used
+========================================================
+```{r}
+head(mtcars)
+```
+
+Output
+========================================================
+The final analysis can be viewed on the link below:
+
+https://sadafmehdi.shinyapps.io/Week4Assignment/

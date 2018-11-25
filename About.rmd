@@ -1,0 +1,24 @@
+---
+title: "Untitled"
+author: "Sadaf Mehdi"
+date: "November 26, 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+## Overview
+
+Shiny application and deploy it on Rstudio's servers. Second, you will use Slidify or Rstudio Presenter to prepare a reproducible pitch presentation about your application.
+
+## R Markdown
+
+This application uses the mtcars dataset to perform regression analysis.
+User has to make a selection from the options(Cylinders,Transmission,Gears) displayed in a drop down menu. The selected option will be plotted again Mile per Gallon (mpg) and a plot will be displayed.
+
+##mtcars Dataset
+```{r echo=TRUE}
+head(mtcars)
+```
+

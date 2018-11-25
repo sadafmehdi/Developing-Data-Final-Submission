@@ -1,0 +1,29 @@
+#
+# This is the server logic of a Shiny web application. You can run the 
+# application by clicking 'Run App' above.
+#
+# Find out more about building applications with Shiny here:
+# 
+#    http://shiny.rstudio.com/
+#
+
+library(shiny)
+
+shinyServer(function(input, output) {
+  
+  mtreact <-reactive({
+    mtcars[,c("mpg",input$ngear)]
+  })
+  
+  output$mtcars <-renderTable({
+    mtreact()
+  })
+
+  output$plot <-renderPlot({
+    with(mtreact(), boxplot(mpg~mtreact()[,2], xlab=input$ngear, ylab= "mpg"))
+  })
+  
+})
+
+
+
